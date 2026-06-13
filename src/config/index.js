@@ -29,7 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://bb.beikexie.cc/api/v1',
+            '',
             '',
             ''
         ],
@@ -49,14 +49,14 @@ export const config  = {
 
     // 是否启用中间件代理API请求
     // 设置为true时，所有API请求将通过中间件转发
-    API_MIDDLEWARE_ENABLED: false,
+    API_MIDDLEWARE_ENABLED: true,
   
     //=======================================================
     // 中间件服务器URL (不含路径) 开源地址 https://github.com/codeman857/EZ-Encrypt-Middleware
-    API_MIDDLEWARE_URL: '',
+    API_MIDDLEWARE_URL: 'https://bb.wanbeibei.xyz',
   
     // 中间件加密KEY必须是16位的16进制字符串，必须和中间件key保持一致 在线生成地址 https://www.bejson.com/math/hex_gen/
-    API_MIDDLEWARE_KEY: '',
+    API_MIDDLEWARE_KEY: 'e876b83bbce2e7ad',
     //=======================================================
 
     // 中间件路由前缀 (与中间件服务器配置保持一致)
