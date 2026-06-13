@@ -29,7 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://bb.beikexie.cc',
+            'https://bb.beikexie.cc/api/v1',
             '',
             ''
         ],
