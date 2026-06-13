@@ -281,53 +281,51 @@ export const config  = {
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
-            ios: 'https://apps.apple.com/app/xxx',
-            android: 'https://play.google.com/store/apps/xxx',
-            macos: 'https://github.com/xxx/releases/latest',
-            windows: 'https://github.com/xxx/releases/latest',
-            linux: 'https://github.com/xxx/releases/latest',
-            openwrt: 'https://github.com/xxx/releases/latest'
+            ios: 'https://apps.apple.com/us/app/shadowrocket/id932747118?l=zh-Hans-CN',
+            android: 'https://xz.beliulol.xyz/f/d/kmud/cmfa-2.11.27-meta-arm64-v8a-release.apk',
+            macos: 'https://xz.beliulol.xyz/f/d/qEHV/Clash.Verge_2.4.7_aarch64.dmg',
+            windows: 'https://xz.beliulol.xyz/f/d/oVCP/Clash.Verge_2.4.7_x64-setup.exe',
         },
 
         // 订阅导入客户端显示控制 部分面板不支持SingBox导入请您注意检查
 
         // iOS平台
         showShadowrocket: true,
-        showSurge: true,
-        showStash: true,
-        showQuantumultX: true,
-        showHiddifyIOS: true,
-        showSingboxIOS: true,
-        showLoon: true,
+        showSurge: false,
+        showStash: false,
+        showQuantumultX: false,
+        showHiddifyIOS: false,
+        showSingboxIOS: false,
+        showLoon: false,
 
         // Android平台客户端
-        showFlClashAndroid: true,
-        showV2rayNG: true,
-        showClashAndroid: true,
-        showSurfboard: true,
+        showFlClashAndroid: false,
+        showV2rayNG: false,
+        showClashAndroid: false,
+        showSurfboard: false,
         showClashMetaAndroid: true,
-        showNekobox: true,
-        showSingboxAndroid: true,
-        showHiddifyAndroid: true,
+        showNekobox: false,
+        showSingboxAndroid: false,
+        showHiddifyAndroid: false,
 
         // Windows平台客户端
-        showFlClashWindows: true,
+        showFlClashWindows: false,
         showClashVergeWindows: true,
-        showClashWindows: true,
-        showNekoray: true,
-        showSingboxWindows: true,
-        showHiddifyWindows: true,
+        showClashWindows: false,
+        showNekoray: false,
+        showSingboxWindows: false,
+        showHiddifyWindows: false,
 
         // MacOS平台客户端
-        showFlClashMac: true,
+        showFlClashMac: false,
         showClashVergeMac: true,
-        showClashX: true,
-        showClashMetaX: true,
-        showSurgeMac: true,
-        showStashMac: true,
-        showQuantumultXMac: true,
-        showSingboxMac: true,
-        showHiddifyMac: true
+        showClashX: false,
+        showClashMetaX: false,
+        showSurgeMac: false,
+        showStashMac: false,
+        showQuantumultXMac: false,
+        showSingboxMac: false,
+        showHiddifyMac: false
     },
 
     // ================ Xiao 版本的配置 =======================
