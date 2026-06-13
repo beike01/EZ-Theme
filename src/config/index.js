@@ -104,7 +104,7 @@ export const config  = {
         primaryColor: '#355cc2',
 
         // 是否启用落地页 (true=启用, false=禁用)
-        enableLandingPage: true // 默认启用
+        enableLandingPage: false // 默认启用
     },
 
     // 认证页面功能配置
@@ -127,10 +127,10 @@ export const config  = {
             enabled: true,
 
             // 弹窗标题
-            title: "用户须知 (可自定义开启)",
+            title: "新用户用户须知",
 
             // 弹窗内容 (支持HTML)
-            content: "<p><strong>欢迎使用我们的服务！</strong></p><p>请注意以下事项：</p><ul><li>请妥善保管您的账号信息</li><li>如有问题请联系客服</li></ul>",
+            content: "<p><strong>欢迎使用我们的服务！</strong></p><p>请注意以下事项：</p><ul><li>请妥善保管您的账号信息</li><li>如有问题请联系网页右下角在线客服</li></ul>",
 
             // 冷却时间（小时），在此时间内不会再次显示弹窗
             cooldownHours: 0,
@@ -143,7 +143,7 @@ export const config  = {
     // 认证页面布局配置
     AUTH_LAYOUT_CONFIG: {
         // 布局类型: 'center' 为居中卡片布局, 'split' 为左右分栏布局
-        layoutType: 'center',
+        layoutType: 'split',
 
         // 左右分栏布局配置 (仅当 layoutType 为 'split' 时生效)
         splitLayout: {
@@ -276,8 +276,8 @@ export const config  = {
         showAndroid: true,
         showMacOS: true,
         showWindows: true,
-        showLinux: true,
-        showOpenWrt: true,
+        showLinux: false,
+        showOpenWrt: false,
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
@@ -335,10 +335,10 @@ export const config  = {
     // 用户中心页面配置
     PROFILE_CONFIG: {
         // 是否显示礼品卡兑换栏目 (true=显示, false=隐藏)
-        showGiftCardRedeem: false, // 只有Xiao-V2board支持礼品卡兑换
+        showGiftCardRedeem: true, // 只有Xiao-V2board支持礼品卡兑换
 
         // 是否显示最近登录设备栏目 (true=显示, false=隐藏)
-        showRecentDevices: true
+        showRecentDevices: false
     },
 
     // =======================================================
@@ -443,7 +443,7 @@ export const config  = {
     // 邀请页面配置
     INVITE_CONFIG: {
         // 是否在导航栏的邀请按钮上显示返利标记
-        showCommissionBadge: false,
+        showCommissionBadge: true,
 
         // 返佣记录每页显示数量（最小值为10，API限制每次请求最少需要返回10条记录）
         recordsPerPage: 10,
