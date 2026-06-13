@@ -29,9 +29,9 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://w5x8mu2a9943r.ezdemo.xyz/api/v1',
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://gy1v06omopzc8.ezdemo.xyz/api/v1'
+            'https://bb.beikexie.cc',
+            '',
+            ''
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -49,14 +49,14 @@ export const config  = {
 
     // 是否启用中间件代理API请求
     // 设置为true时，所有API请求将通过中间件转发
-    API_MIDDLEWARE_ENABLED: true,
+    API_MIDDLEWARE_ENABLED: false,
   
     //=======================================================
     // 中间件服务器URL (不含路径) 开源地址 https://github.com/codeman857/EZ-Encrypt-Middleware
-    API_MIDDLEWARE_URL: 'https://d2ijw202als7c.ezdemo.xyz',
+    API_MIDDLEWARE_URL: '',
   
     // 中间件加密KEY必须是16位的16进制字符串，必须和中间件key保持一致 在线生成地址 https://www.bejson.com/math/hex_gen/
-    API_MIDDLEWARE_KEY: '4c6f8e5f9467dc71',
+    API_MIDDLEWARE_KEY: '',
     //=======================================================
 
     // 中间件路由前缀 (与中间件服务器配置保持一致)
@@ -66,7 +66,7 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'EZ THEME',
+        siteName: '贝壳云',
         siteDescription: 'EZ UI',
         // copyright会自动使用当前年份
         copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
@@ -124,7 +124,7 @@ export const config  = {
         // 认证页面弹窗公告配置
         popup: {
             // 是否启用弹窗
-            enabled: false,
+            enabled: true,
 
             // 弹窗标题
             title: "用户须知 (可自定义开启)",
@@ -174,7 +174,7 @@ export const config  = {
     // 商店页面配置
     SHOP_CONFIG: {
         // 是否在商店导航上显示热销标记
-        showHotSaleBadge: false,
+        showHotSaleBadge: true,
 
         // 是否显示套餐特性卡片 (true=显示, false=隐藏)
         showPlanFeatureCards: true, // 默认显示
@@ -217,7 +217,7 @@ export const config  = {
             cooldownHours: 0,
 
             // 等待时间（秒），用户需要等待多少秒才能关闭弹窗，设为0表示无需等待
-            closeWaitSeconds: 0
+            closeWaitSeconds: 3
         }
     },
     ORDER_CONFIG: {
@@ -230,10 +230,10 @@ export const config  = {
     // 仪表盘页面配置
     DASHBOARD_CONFIG: {
         // 是否在欢迎卡片中显示用户邮箱 (true=显示, false=隐藏)
-        showUserEmail: false,
+        showUserEmail: true,
 
         // 是否为导入订阅按钮添加高光效果和填充底色 (true=添加效果, false=不添加效果)
-        importButtonHighlightBtnbgcolor: false,
+        importButtonHighlightBtnbgcolor: true,
 
         // ===============================
 
@@ -429,7 +429,7 @@ export const config  = {
     // 充值相关配置
     WALLET_CONFIG: {
         // 预设充值金额选项（单位：元）
-        presetAmounts: [6, 30, 68, 128, 256, 328, 648, 1280],
+        presetAmounts: [18, 32, 100, 200, 300, 400,],
 
         // 默认选中的充值金额（如果设为null则不预选金额）
         defaultSelectedAmount: null,
